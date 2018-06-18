@@ -6,6 +6,14 @@ Para instalar gitlab se debe de seguir el siguiente tutorial: [AQUI](https://lin
 
 # Comandos
 
+## Rails console
+
+Para iniciar una consola de rails con gitlab usamos:
+
+```
+$ sudo gitlab-rails console
+```
+
 ## Correo
 
 Para configurar el correo debemos de abrir el archivo `/etc/gitlab/gitlab.rb` y luego de editarlo correr el comando:
