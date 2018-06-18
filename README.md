@@ -41,5 +41,9 @@ gitlab_rails['smtp_password'] = "8b6ffrmle180"
 gitlab_rails['smtp_domain'] = "sandboxb94bb6a00890468980cbb5fb4ee60dc2.mailgun.org"
  
  ```
+Finalmente para probarlo podemos mandar un correo con la `Consola de Rails de Gitlab`:
 
+```
+$ irb(main):003:0> Notify.test_email('destination_email@address.com', 'Message Subject', 'Message Body').deliver_now
+```
 
