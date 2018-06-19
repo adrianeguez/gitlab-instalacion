@@ -30,3 +30,12 @@ Please enter the Docker image (eg. ruby:2.1):
 > node:4.2.2
 
 ```
+
+Despues de instalar el runner debemos de levantarlo con el siguiente comando:
+
+```
+$ gitlab-ci-multi-runner --debug run
+```
+
+
+>> TODO... 
