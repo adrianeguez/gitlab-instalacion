@@ -57,5 +57,11 @@ $ irb(main):003:0> Notify.test_email('destination_email@address.com', 'Message S
 ## Instalacion con docker
 
 ```
-$ sudo docker run --detach --hostname gitlab.example.com --publish 443:443 --publish 80:80 --publish 22:22 --name gitlab --restart always --volume /srv/gitlab/config:/etc/gitlab --volume /srv/gitlab/logs:/var/log/gitlab --volume /srv/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:latest
+$ sudo docker run --detach --hostname gitlab.example.com --publish 8085:443 --publish 8086:80 --publish 8087:22 --name gitlab --restart always --volume /Users/adrianeguez/Documents/GitlabDocker/Configuration:/etc/gitlab --volume /Users/adrianeguez/Documents/GitlabDocker/Logs:/var/log/gitlab --volume /Users/adrianeguez/Documents/GitlabDocker/Data:/var/opt/gitlab gitlab/gitlab-ce:latest
 ```
+
+```
+$ sudo docker run --detach --hostname gitlab.example.com --publish 8095:443 --publish 8096:80 --publish 8097:22 --name gitlabee --restart always --volume /Users/adrianeguez/Documents/GitlabDockerEE/Configuration:/etc/gitlab --volume /Users/adrianeguez/Documents/GitlabDockerEE/Logs:/var/log/gitlab --volume /Users/adrianeguez/Documents/GitlabDockerEE/Data:/var/opt/gitlab gitlab/gitlab-ee:latest
+```
+
+
