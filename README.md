@@ -54,3 +54,8 @@ Finalmente para probarlo podemos mandar un correo con la `Consola de Rails de Gi
 $ irb(main):003:0> Notify.test_email('destination_email@address.com', 'Message Subject', 'Message Body').deliver_now
 ```
 
+## Instalacion con docker
+
+```
+$ sudo docker run --detach --hostname gitlab.example.com --publish 443:443 --publish 80:80 --publish 22:22 --name gitlab --restart always --volume /srv/gitlab/config:/etc/gitlab --volume /srv/gitlab/logs:/var/log/gitlab --volume /srv/gitlab/data:/var/opt/gitlab gitlab/gitlab-ce:latest
+```
